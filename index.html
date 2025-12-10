@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silambarasan - Freelance Content Writer & Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Freelan</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Content Writer</span> &
+                    <span class="gradient-text">Front-End Developer</span>
+                </h1>
+                <p class="hero-subtitle">Transforming ideas into engaging content and beautiful websites</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href=" https://www.linkedin.com/in/silambarasan-m-b1046a320?" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/ashoklap1212-code
+                    " aria-label="GitHub"><i class="fab fa-github"></i></a>
+
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate freelancer specializing in content writing and front-end web development. With a keen eye for detail and a love for storytelling, I craft compelling narratives that resonate with audiences while building stunning, user-friendly websites.
+                    </p>
+                    <p>
+                        My approach combines creative writing skills with technical expertise to deliver content and digital experiences that not only look great but also drive results. Whether you need engaging websites, content for your grouth , content writing .I'm here to
+                        bring your vision to life.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>Happy Clients</h3>
+                            <p></p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3>Content Writing</h3>
+                    <p>Engaging blog posts, articles, web copy, and marketing content tailored to your brand voice and audience.</p>
+                    <ul class="service-features">
+                        <li>Blog Posts & Articles</li>
+                        <li>SEO-Optimized Content</li>
+                        <li>Web Copy</li>
+                        <li>Product Descriptions</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Front-End Development</h3>
+                    <p>Responsive, modern websites built with HTML, CSS, and JavaScript that provide exceptional user experiences.</p>
+                    <ul class="service-features">
+                        <li>Responsive Design</li>
+                        <li>Interactive UI/UX</li>
+                        <li>Performance Optimization</li>
+                        <li>Cross-Browser Compatibility</li>
+                    </ul>
+                </div>
+
+                <!-- 
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Content</h3>
+                    <p>Content that ranks well in search engines while maintaining readability and engagement for your audience.</p>
+                    <ul class="service-features">
+                        <li>Keyword Research</li>
+                        <li>On-Page SEO</li>
+                        <li>Content Strategy</li>
+                        <li>Analytics & Reporting</li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="content">Content Writing</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>E-Commerce Website</h3>
+                            <p>Modern responsive e-commerce platform</p>
+                            <a href="https://foodcourt-pink.vercel.app/" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="content">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Medium </h3>
+                            <p>My new friend hairfall</p>
+                            <a href="https://medium.com/@ashoklap1212/my-new-friend-hair-fall-bb9ae5cc433c" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Portfolio Website</h3>
+                            <p>Creative portfolio for a photographer</p>
+                            <a href="https://portfolio-eight-nu-ny076e1gsr.vercel.app/" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                <div class="portfolio-item" data-category="content">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>SEO Article</h3>
+                            <p>High-ranking article on digital marketing</p>
+                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Landing Page</h3>
+                            <p>Conversion-optimized landing page</p>
+                            <a href="https://brilliant.digital/blog/what-are-landing-pages" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="content">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Content cat</h3>
+                            <p> writing part of part</p>
+                            <a href="https://webflow.com/blog/news-web-design" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Web Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>HTML5</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>CSS3</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>React</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3><i class="fas fa-pen"></i> Content Writing</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Blog Writing</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>SEO Writing</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Copywriting</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Content Strategy</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="88"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>Have a project in mind? I'd love to hear about it. Send me a message and let's discuss how we can bring your ideas to life.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ashoklap1212@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>9150479376</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>chennai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div id="formMessage" class="form-message"></div>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <span  id="submitBtnText">Send Message</span>
+                        <span id="submitBtnLoader" class="btn-loader" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Freelan. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src=" https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2 "></script>
+    <script>
+        const supabaseClient = supabase.createClient(
+            "https://kvadlbhdbbfavtomznxy.supabase.co",
+            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt2YWRsYmhkYmJmYXZ0b216bnh5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ3NzczNTgsImV4cCI6MjA4MDM1MzM1OH0.SfkKjlNxOv9-l6SksIbs_Mhu2Fhr4W6HrvPHZfJq4to"
+        );
+    </script>
+    <script src=" script.js "></script>
+    <!-- 
+    <script src="super.js "></script> -->
+
+</body>
+
+</html>
